@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Character_counter</title>
+</head>
+
+<div class="container">
+    <div class="title_box">
+    <h1 class="title">Insert your text here! 
+    </h1>
+</div>
+   
+    <textarea onkeydown="checkChar()" onkeyup="checkChar()"id="textBox" name="Text1"  rows="9"  placeholder="AaAbcd"></textarea>
+    <div class="countArea">    
+    <h3>Charactes: <span class="number" id="numberField" >6</span></h3>
+    <h3>Words: <span class="number" id="wordsField" >1</span></h3>
+    <h3>Letters: <span class="number" id="letterField" >6</span></h3>
+    <h3>Spaces: <span class="number" id="spaceField" >0</span></h3>
+    <h3>Enters: <span class="number"  id="lineField" >0</span></h3>
+    </div>
+
+
+<div class="tableArea">
+    <h3 class="tableText">Alphabet proportion</h3>
+    <table id="table">        
+            <tr>
+              <th class="number">A/a</th>
+              <th class="number">B/b</th>
+              <th class="number">C/c</th>
+              <th class="number">D/d</th> 
+              <th class="number"></th>
+              <th class="number"></th>
+              <th class="number"></th>
+              <th class="number"></th> 
+              <th class="number"></th>
+              <th class="number"></th>
+
+            </tr>
+            <tr>
+            <td class="number">50%</td>
+            <td class="number">17%</td>
+            <td class="number">17%</td>
+            <td class="number">17%</td>
+            <td class="number"></td>
+            <td class="number"></td>
+            <td class="number"></td>
+            <td class="number"></td>
+            <td class="number"></td>
+            <td class="number"></td>            
+            </tr>
+    </table>
+</div>
+</div>
+<script src="./main.js"></script>
+<body>    
+    
+</body>
+</html>
